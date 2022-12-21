@@ -1,0 +1,103 @@
+.register {
+    margin-top: 3rem;
+}
+
+.register_container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 5rem;
+    background: var(--color-bg1);
+    height: 35rem;
+    padding: 4rem;
+    margin: 7rem auto;
+    border-radius: 1rem;
+}
+
+.image_side {
+    background: var(--color-primary);
+    padding: 4rem;
+    border-radius: 1rem;
+    height: 40rem;
+    position: relative;
+    bottom: 7rem;
+}
+
+.image_side h3 {
+    text-align: left;
+    font-size: 2rem;
+}
+
+.image_side img {
+    width: 16rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.image_side a {
+    text-decoration: underline;
+    color: var(--color-white);
+}
+
+
+/* ============= FORM ================== */
+
+.form_side {
+    margin-right: 4rem;
+}
+
+.input_fild {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.form_side input[type='text'] {
+    width: 80%;
+    padding-left: 1rem;
+}
+
+.register_icon {
+    margin-top: 1rem;
+    color: var(--color-primary);
+}
+
+
+/* ============== MEDIA QUERIES (MEDIUM) ============ */
+
+@media screen and (max-width: 1024px) {
+    .register_container {
+        gap: 1.5rem;
+        margin-top: 3rem;
+        height: auto;
+        padding: 1.5rem;
+    }
+    .image_side {
+        width: auto;
+        padding: 1.5rem;
+        bottom: 0;
+    }
+    .form_side {
+        align-self: center;
+        margin-right: 1.5rem;
+    }
+}
+
+
+/** ============== MEDIA QUERIES (SMALL) ============ */
+
+@media screen and (max-width: 600px) {
+    .register_container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        margin-top: 0;
+        padding: 0;
+    }
+    .image_side {
+        height: 25rem;
+        padding: 3rem;
+    }
+    .form_side {
+        margin: 0 1.5rem 3rem;
+        width: 100%;
+    }
+}

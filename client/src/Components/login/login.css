@@ -1,0 +1,117 @@
+.login {
+    margin-top: 3rem;
+}
+
+.login_container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 7rem;
+    background: var(--color-bg1);
+    padding: 4rem;
+    margin: 7rem auto;
+    height: 30rem;
+    border-radius: 1rem;
+}
+
+.login_left {
+    background: var(--color-primary);
+    padding: 3rem;
+    border-radius: 2rem;
+    height: 35rem;
+    position: relative;
+    bottom: 7rem;
+}
+
+.login_left h3 {
+    font-size: 2rem;
+}
+
+.login_left img {
+    margin-top: 2rem;
+    width: 17rem;
+    align-items: center
+}
+
+.login_left a {
+    position: absolute;
+    margin-top: 3rem;
+    cursor: pointer;
+    text-decoration: underline;
+    color: var(--color-bg3);
+    /* transition: (--transition); */
+}
+
+.login_left a:hover {
+    color: var(--color-bg1);
+    transition: var(--transition);
+}
+
+.login_right {
+    display: flex;
+    flex-direction: column;
+    margin-right: 6rem;
+}
+
+.login_right form {
+    display: grid;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.login_right input {
+    height: 2rem;
+    padding-left: 1rem;
+    width: 80%;
+}
+
+.login_right .btn {
+    width: max-content;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+
+/* ============== MEDIA QUERIES (MEDIUM) ============ */
+
+@media screen and (max-width: 1024px) {
+    .login_container {
+        gap: 1.5rem;
+        height: auto;
+        margin-top: 3rem;
+        padding: 1.5rem;
+    }
+    .login_left {
+        width: auto;
+        padding: 1.5rem;
+        bottom: 0;
+    }
+    .login_left {
+        align-self: center;
+        margin-right: 1.5rem;
+    }
+}
+
+
+/** ============== MEDIA QUERIES (SMALL) ============ */
+
+@media screen and (max-width: 600px) {
+    .login_container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        margin-top: 0;
+        padding: 0;
+    }
+    .login_left {
+        height: 28rem;
+        padding: 4rem;
+        margin: 0;
+    }
+    .login_right {
+        margin: 0 1.5rem 3rem;
+    }
+    .login_left img {
+        margin-top: 2rem;
+        width: 15rem;
+        align-items: center
+    }
+}
